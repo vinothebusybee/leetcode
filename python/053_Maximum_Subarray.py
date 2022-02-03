@@ -47,6 +47,20 @@ class Solution(object):
             maxSofFar = max(maxEndingHere, maxSofFar)
         return maxSofFar
     
+# [-2,1,-3,4,-1,2,1,-5,4]
+
+# element -> maxEndingHere -> maxSofFar
+
+# -2-->-2-->-2
+
+#  1--> 1-->1
+# -3-->-2-->1
+#  4--> 4-->4
+# -1--> 3-->4
+#  2--> 5-->5
+#  1--> 6-->6
+# -5--> 1-->6
+#  4--> 5-->6
     
     #Neet code
     class Solution:
