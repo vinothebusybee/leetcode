@@ -43,6 +43,21 @@ class Solution(object):
     def maxSubArray(self, nums):
         maxEndingHere = maxSofFar = nums[0]
         for i in range(1, len(nums)):
-            maxEndingHere = max(maxEndingHere + nums[i], nums[i])
+            maxEndingHere = max(maxEndingHere + nums[i], nums[i]) # if current element is greater than previous sum leave it, consider onlt current element
             maxSofFar = max(maxEndingHere, maxSofFar)
         return maxSofFar
+    
+    
+    #Neet code
+    class Solution:
+    def maxSubArray(self, nums: List[int]) -> int:
+        maxSub = nums[0]
+        currSum = 0
+        
+        for n in nums:
+            if currSum<0:
+                currSum = 0
+            currSum += n
+            maxSub = max(maxSub,currSum)
+        return maxSub
+    
