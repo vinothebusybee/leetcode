@@ -16,3 +16,14 @@ class Solution(object):
                 if temp > max_profit:
                     max_profit = temp
         return max_profit
+    
+    
+    def maxProfit2(self,prices):
+    min = prices[0]
+    profit = 0
+    for i in range(1,len(prices)):
+        if prices[i]<min:
+            min = prices[i]
+        else:
+            profit = max(profit,prices[i])
+    return profit
