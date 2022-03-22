@@ -63,6 +63,9 @@ print(sa.fibonacci(6)) # 8
         
 https://www.geeksforgeeks.org/python-program-for-program-for-fibonacci-numbers-2/
     
+1, 1, 2, 3, 5, 8, 13, 21, 34, 55 ... => Fibonacci
+1, 2, 3, 5, 8, 13, 21, 34, 55 ... => climbing stairs
+    
 #####################
     
     # C = {1: 1, 2: 2}
