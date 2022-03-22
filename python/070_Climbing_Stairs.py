@@ -37,26 +37,26 @@ class Solution:
         
         return current
     
-    def fibonacci(self,n):
-        a = 0
-        b = 1
 
-        if n < 0:
-            print("Incorrect input")
-
-        elif n == 0:
-            return 0
-
-        elif n == 1:
-            return b
-        else:
-            for i in range(1, n):
-                c = a + b
-                a = b
-                b = c
-            return b
-
+    def vinfib(self, n: int) -> int:
         
+        if n < 1: 
+            return 0
+        elif n <= 2: 
+            return 1
+        
+        current = 0
+        one = 1
+        two = 1
+        
+        for i in range(2,n):
+            current = one + two
+            one = two
+            two = current
+            
+        return current
+    
+    
 print(sa.climbStairs(5)) # 8
 
 print(sa.fibonacci(6)) # 8
