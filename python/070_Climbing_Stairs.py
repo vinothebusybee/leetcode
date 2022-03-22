@@ -36,7 +36,31 @@ class Solution:
             two = current
         
         return current
+    
+    def fibonacci(self,n):
+        a = 0
+        b = 1
 
+        if n < 0:
+            print("Incorrect input")
+
+        elif n == 0:
+            return 0
+
+        elif n == 1:
+            return b
+        else:
+            for i in range(1, n):
+                c = a + b
+                a = b
+                b = c
+            return b
+
+        
+print(sa.climbStairs(5)) # 8
+
+print(sa.fibonacci(6)) # 8
+        
 #####################
     
     # C = {1: 1, 2: 2}
