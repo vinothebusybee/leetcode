@@ -34,3 +34,34 @@ class Solution(object):
             currMax = max(prevMax + num, currMax)
             prevMax = temp
         return currMax
+
+
+[2,7,9,3,1]
+
+#2
+temp = 0
+currMax = 2  max(0+2, 0)
+prevmax = 0
+
+#7
+temp = 2
+currMax = 7   max(0+7, 0)
+prevmax = 2
+
+#9
+temp = 7
+currMax = 11  max(2+9,7)
+prevmax = 7
+
+#3
+temp = 11
+currMax = 11  max(7+3, 11)
+prevmax = 11
+
+#1
+temp = 11
+currMax = 12  max(11+1, 11)
+prevmax = 11
+
+    
+    
