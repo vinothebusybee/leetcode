@@ -19,8 +19,26 @@ class Solution(object):
             dp[1], dp[0] = dp[1] + dp[0], dp[1]
         return dp[1]
 
+#####################
 
+class Solution:
+    def vinclimbStairs(self, n: int) -> int:
+        
+        if n <= 2: return n
+        
+        current = 0
+        one = 1 
+        two = 2
+        
+        for i in range (2,n):
+            current = one + two
+            one = two
+            two = current
+        
+        return current
 
+#####################
+    
     # C = {1: 1, 2: 2}
     # def climbStairs(self, n):
     #     """
