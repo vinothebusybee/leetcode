@@ -63,5 +63,17 @@ temp = 11
 currMax = 12  max(11+1, 11)
 prevmax = 11
 
-    
-    
+
+##########################################################
+test
+#1
+temp = 11
+currMax = 12  max(11+1, 11)
+prevmax = 11
+
+#1
+temp = 11
+currMax = 12  max(11+1, 11)
+prevmax = 11
+
+test2
