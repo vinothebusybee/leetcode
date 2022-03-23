@@ -21,7 +21,11 @@ class Solution(object):
         for i in counter:
             freq.append([i,counter[i]])
         
+        # freq = [[3, 1], [1, 2], [4, 2], [5, 1], [2, 1], [6, 1]]
+        
         freq.sort(key = lambda x: x[1],reverse=True)
+        
+        # freq = [[1, 2], [4, 2], [3, 1], [5, 1], [2, 1], [6, 1]]    # after sort
         
         print(k,"numbers with most occurrences are")
         
